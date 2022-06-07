@@ -5,6 +5,7 @@ input {
 .search-btn {
     display: block;
     margin-left: 40%;
+    margin-bottom: 3em;
 }
 
 .btn-style {
