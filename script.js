@@ -28,3 +28,13 @@ var displayYoutube = function(userChoice) {
 
 // var youtubeApi = "https://www.googleapis.com/youtube/v3/videos?part=snippet.thumbnails.default&chart=mostPopular&videoCategoryId=snippet&key=AIzaSyCJVNary6yBhD7_VSyVCxAaleA0ZeyW-Vw"
 // console.log(youtubeApi);
+
+/* Toggle between adding and removing the "responsive" class to navbar when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
