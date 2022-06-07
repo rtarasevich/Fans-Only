@@ -1,8 +1,20 @@
 var buttonEl = document.querySelector("#btn")
 var userSearchEl = document.querySelector("#userSearch");
 
+
 // when the user types in their choice it adds it to the url string 
 // when the button is pushed it uses the value of the button set in html to go to the results page
+
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+
 var redirect = function(userChoice){
     var redirectPage = buttonEl.value;
     var queryString = '?artist=' + userChoice;
