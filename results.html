@@ -2,10 +2,14 @@
 <html lang="en">
 <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
+
 <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 
+
 <header>
+  <meta charset="UTF-8" />
   </div> <!-- End Nav Bar RT -->
+  <title>Results!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="navbar">
@@ -15,7 +19,9 @@
   <a href="index.html"><i class="fa fa-fw fa-hand-peace-o"></i> About Us</a>
 </div>
 
- <!-- End Nav Bar RT -->
+</header>
+
+ <body>
     <div class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="lg:text-center">
@@ -40,23 +46,24 @@
                   <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                     <!-- fontawesome: youtube icon -->
                     <a href="#"><i class="fa fa-2x fa-fw fa-youtube"></i></a>
-                  </div>
+                  </div class="display">
                   <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Youtube results here!</p>
+                  <img id="youtube" />
+                  <p class="font" id="ytDescription"></p>
+                  <img id="yt2" />
+                  <p class="font" id="ytDescription2"></p>
+                  <img id="yt3" />
+                  <p class="font" id="ytDescription3" ></p>
                 </dt>
               </div>
       
-              <div class="relative">
-                <dt>
-                  <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <!-- fontawesome: spotify icon -->
-                    <a href="#"><i class="fa fa-2x fa-fw fa-spotify"></i></a>
-                  </div>
-                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Spotify results here!</p>
-                </dt>
-              </div>
+             
             </dl>
           </div>
         </div>
       </div>
-</header>
+    </body>
+
+<script src="results.js"></script>
+
 </html>

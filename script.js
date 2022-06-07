@@ -1,35 +1,6 @@
 var buttonEl = document.querySelector("#btn")
 var userSearchEl = document.querySelector("#userSearch");
 
-// buttonEl.addEventListener('click', results.html);
-// function
-
-var userInformation = function(event) {
-    event.preventDefault();
-
-    var userChoice = userSearchEl.value
-    console.log(userChoice);
-
-}
-
-
-var displayYoutube = function(userChoice) {
-    var youtubeApi = "https://www.googleapis.com/youtube/v3/search=" + userSearchEl + "part=snippet.thumbnails.default&chart=mostPopular&videoCategoryId=snippet&key=AIzaSyCJVNary6yBhD7_VSyVCxAaleA0ZeyW-Vw"
-
-    fetch(youtubeApi)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(displayYoutube){
-
-    })
-    console.log(youtubeApi);
-}
-
-// var youtubeApi = "https://www.googleapis.com/youtube/v3/videos?part=snippet.thumbnails.default&chart=mostPopular&videoCategoryId=snippet&key=AIzaSyCJVNary6yBhD7_VSyVCxAaleA0ZeyW-Vw"
-// console.log(youtubeApi);
-
-/* Toggle between adding and removing the "responsive" class to navbar when the user clicks on the icon */
 function myFunction() {
   var x = document.getElementById("myNavbar");
   if (x.className === "navbar") {
@@ -38,3 +9,31 @@ function myFunction() {
     x.className = "navbar";
   }
 }
+
+var redirect = function(userChoice){
+    var redirectPage = buttonEl.value;
+    var queryString = '?artist=' + userChoice;
+    var uri = redirectPage + queryString;
+
+    window.location = uri;
+
+    // displayYoutube();
+}
+
+var userInformation = function(event){
+    event.preventDefault();
+    var userChoice = userSearchEl.value
+    localStorage.setItem("userChoice" , userChoice);
+    // console.log("did this store", localStorage.setItem("userChoice" , userChoice)) 
+    // debugger;
+
+    if(userChoice != "") {
+        redirect(userChoice);
+    }
+}
+
+buttonEl.addEventListener("click", userInformation);
+
+
+
+
