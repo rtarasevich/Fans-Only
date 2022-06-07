@@ -3,7 +3,10 @@
 <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 
+
 <header>
+  <meta charset="UTF-8" />
+  <title>Fans Only</title>
   </div> <!-- End Nav Bar RT -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -13,6 +16,8 @@
   <a href="#"><i class="fa fa-fw fa-headphones"></i> Features</a>
   <a href="#"><i class="fa fa-fw fa-hand-peace-o"></i> About Us</a>
 </div>
+
+</header>
 <!-- Link CSS RT -->
 <style>
   body {font-family: Arial, Helvetica, sans-serif;}
@@ -48,6 +53,7 @@
   </style>
 
  <!-- End Nav Bar RT -->
+ <body>
     <div class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="lg:text-center">
@@ -81,7 +87,7 @@
                   </div>
                   <p class="ml-16 text-lg leading-6 font-medium text-gray-900">No hidden fees</p>
                 </dt>
-                <dd class="mt-2 ml-16 text-base text-gray-500">The only thing needed is a Spotify or Apple music subscription. </dd>
+                <dd class="mt-2 ml-16 text-base text-gray-500">You don't even need an email to get your search</dd>
               </div>
       
               <div class="relative">
@@ -113,15 +119,21 @@
           </div>
         </div>
       </div>
-</header>
+    </body>
 
   <section>
   <div class="search-btn"> 
     <input id="userSearch" type="text" placeholder="Search here"> 
-    <button class="btn">Enter</button>
+    <button class="btn-style" type="button" value="results.html" id="btn">
+      Enter
+    </button>
   </div>
   </section>
 
-  <script>src="script.js"</script>
+
+
+  <script src="script.js"></script> 
+ 
 </html>
 
+<!-- value="results.html" onclick="userInformation()" -->
