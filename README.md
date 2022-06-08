@@ -24,7 +24,8 @@ Giphy: https://giphy.com/
 Vscode: https://code.visualstudio.com/
 Tailwind: https://tailwindcss.com/
 
- Deployed URL: https://rtarasevich.github.io/Group_Project_1/
+ Deployed URL: https://rtarasevich.github.io/Fans-Only/
+
 
  Screenshot:
  <img src=images/screenshot.png>
