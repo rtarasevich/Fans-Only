@@ -10,8 +10,8 @@ const musixMatchArtistApi = `https://cors-anywhere.herokuapp.com/https://api.mus
 const musixMatchAlbumApi = `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/artist.albums.get?apikey=${apiKey}&artist_id=${artistId}&s_release_date=desc&g_album_name=2`;
 
 
-const artist = urlParams.get('artist'); 
-console.log(artist);
+// const artistApi = urlParams.get('artist'); 
+// console.log(artistApi);
 
 const giphyApi = "https://api.giphy.com/v1/gifs/search?api_key=LsyDH7mM0U3nYHnx90FmDD83p6vSv3Fn&limit=3&offset=0&rating=g&lang=en&q=" + artist;
 
