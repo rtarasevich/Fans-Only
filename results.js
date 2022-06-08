@@ -27,11 +27,6 @@ fetch(giphyApi)
 
 
 
-
-
-
-
-
 const youtubeApi = "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBrlqEtaRcF-w17dUN3fi0z8H9NRF-FMy4&type=video&q=" + artist;
 
 fetch(youtubeApi)
@@ -65,8 +60,5 @@ fetch(youtubeApi)
         ytData3El.textContent = ytData3
         yt3El.setAttribute("src" , ytUrl3);  
  }) 
-
-
-
 
 
