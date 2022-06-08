@@ -21,8 +21,9 @@ All you have to do is:
 Technologies used: 
 Youtube: https://www.youtube.com/
 Giphy: https://giphy.com/
-Vscode: https://code.visualstudio.com/
 Tailwind: https://tailwindcss.com/
+
+While working with the youtube API we kept running into copywrite issues. Given the resources that we have we were able to get at least a thumbnail of the video to display. 
 
  Deployed URL: https://rtarasevich.github.io/Fans-Only/
 
