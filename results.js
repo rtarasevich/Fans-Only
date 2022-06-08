@@ -4,16 +4,6 @@ const urlParams = new URLSearchParams(window.location.search);
 const artist = urlParams.get('artist'); 
 console.log(artist);
 
-// let artistId;
-// const apiKey = `70f48e3a238075767ef29e2921e77a8b`;
-// const youtubeApi = "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyCJVNary6yBhD7_VSyVCxAaleA0ZeyW-Vw&type=video&q=" + artist;
-// const musixMatchArtistApi = `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/artist.search?apikey=${apiKey}&q_artist=${artist}&page_size=10&format=json`;
-// const musixMatchAlbumApi = `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/artist.albums.get?apikey=${apiKey}&artist_id=${artistId}&s_release_date=desc&g_album_name=2`;
-
-
-// const artistApi = urlParams.get('artist'); 
-// console.log(artistApi);
-
 const giphyApi = "https://api.giphy.com/v1/gifs/search?api_key=LsyDH7mM0U3nYHnx90FmDD83p6vSv3Fn&limit=3&offset=0&rating=g&lang=en&q=" + artist;
 
 fetch(giphyApi)
@@ -37,13 +27,7 @@ fetch(giphyApi)
 
 
 
-
-
-
-
-
 const youtubeApi = "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBrlqEtaRcF-w17dUN3fi0z8H9NRF-FMy4&type=video&q=" + artist;
-
 
 fetch(youtubeApi)
     .then(function(response) {
@@ -76,39 +60,5 @@ fetch(youtubeApi)
         ytData3El.textContent = ytData3
         yt3El.setAttribute("src" , ytUrl3);  
  }) 
-
-// const getAlbum = function() {
-//     fetch(musixMatchAlbumApi, {
-//         method: 'GET'
-//     })
-//         .then(function(response) {
-//             return response.json();
-//         })
-//         .then(function(data) {
-//             console.log(data);
-//             if (data.status === 200) {
-//             let albumName = data.message.body.album_list[0].album.album_name;
-//             let musixAlbumEl = document.querySelector('#musixAlbum');
-//             musixAlbumEl.textContent = albumName;
-//             } else {
-//                 let musixAlbumEl = document.querySelector('#musixAlbum');
-//                 musixAlbumEl.textContent = "Looks like there were no albums listed on Musixmatch";
-//             }
-
-//         })
-// }
-
-
-// fetch(musixMatchArtistApi)
-//  .then(function(response) {
-//      return response.json();
-//  })
-//  .then(function(data) {
-//      console.log(data);
-//      artistId = data.message.body.artist_list[0].artist.artist_id;
-//      console.log(artistId);
-//      getAlbum();
-//  })
-
 
 
